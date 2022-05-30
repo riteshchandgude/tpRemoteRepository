@@ -24,7 +24,7 @@ public class Tp2 {
 		
 		driver.get("https://www.google.com/");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Marvel's Jessica And Jones Imdb");
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Marvel's Jessica Jones Imdb");
 		
 		WebDriverWait wait=new WebDriverWait(driver,4000);
 		wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//div[@class='FPdoLc lJ9FBc']//child::center//child::input[@name='btnK']"))));
@@ -54,7 +54,7 @@ public class Tp2 {
 		for(int i=1;i<ele.size();i++)
 		{
 			WebElement eletemp=ele.get(i);
-			System.out.println("Name wise Episodes of J&J S01 "+eletemp.getText());
+			System.out.println("Name wise Episodes of JJ S01 "+eletemp.getText());
 		}
 		
 
